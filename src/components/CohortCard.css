@@ -1,0 +1,55 @@
+.Cohort-Card {
+  width: 300px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-bottom-right-radius: 20%;
+  border-bottom-left-radius: 20%;
+}
+
+.Cohort-Card:hover {
+  transform: scale(1.05);
+  /* Slightly increase size */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  /* Enhance shadow */
+}
+
+.Cohort-Card-image {
+  width: 50%;
+  height: 340px;
+  /* display: block; */
+}
+
+.Cohort-Card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  /* Dark overlay */
+  backdrop-filter: blur(10px);
+  /* Blur effect */
+  padding: 16px;
+  color: #ffffff;
+  text-align: left;
+  width: 220px;
+  height: 100px;
+}
+
+.Cohort-Card-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 0 8px;
+}
+
+.Cohort-Card-description {
+  font-size: 10px;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.Cohort-Card img {
+  width: 220px;
+  height: 250px;
+}
