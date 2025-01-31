@@ -3,6 +3,7 @@ import "./Cohort.css";
 import Session from './Session';
 import CohortCard from './CohortCard';
 import CohortCard2 from './CohortCard2';
+import CohortCard3 from './CohortCard3';
 
 const members = [
     {
@@ -52,6 +53,48 @@ const mentors = [
 
     }
 ];
+const teammates = [
+    {
+        id: 1,
+        imgURL:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0KlpkftVZnoIt82QHzxBAFwaV1EG85baIDw&s",
+        name: "Rahul Mishra",
+        role: "sdckmckcmdokcsdkockcos",
+        description: "docodciocjcci"
+    },
+    {
+        id: 2,
+        imgURL:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0KlpkftVZnoIt82QHzxBAFwaV1EG85baIDw&s",
+        name: "Rahul Mishra",
+        role: "sdckmckcmdokcsdkockcos",
+        description: "docodciocjcci"
+    },
+    {
+        id: 3,
+        imgURL:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0KlpkftVZnoIt82QHzxBAFwaV1EG85baIDw&s",
+        name: "Rahul Mishra",
+        role: "sdckmckcmdokcsdkockcos",
+        description: "docodciocjcci"
+    },
+    {
+        id: 4,
+        imgURL:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0KlpkftVZnoIt82QHzxBAFwaV1EG85baIDw&s",
+        name: "Rahul Mishra",
+        role: "sdckmckcmdokcsdkockcos",
+        description: "docodciocjcci"
+    },
+    {
+        id: 5,
+        imgURL:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0KlpkftVZnoIt82QHzxBAFwaV1EG85baIDw&s",
+        name: "Rahul Mishra",
+        role: "sdckmckcmdokcsdkockcos",
+        description: "docodciocjcci"
+    }
+];
 function createCard2(member) {
     return (
         <CohortCard
@@ -67,6 +110,15 @@ function createCard3(mentor) {
             img={mentor.imgURL}
             name={mentor.name}
             pos={mentor.pos} />
+    );
+}
+function createCard4(teammate) {
+    return (
+        <CohortCard3
+            img={teammate.imgURL}
+            name={teammate.name}
+            role={teammate.role}
+            description={teammate.description} />
     );
 }
 function Cohort() {
@@ -128,7 +180,9 @@ function Cohort() {
                     <p>MEET YOUR MENTORS</p>
                     <p>Real founders, operators and industry pros guiding you every step of the way</p>
                 </div>
-                <div className="carding">
+                <div className="carding"style={{ display: "grid",
+    gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+    gap: "20px" }}>
                     {mentors.map(createCard3)}
                 </div>
             </div>
@@ -137,103 +191,10 @@ function Cohort() {
                     <p>OUR CORE TEAM</p>
                     <p>Why we built Build School and how we’re shaping India’s next generation of founders</p>
                 </div>
-                <div className="Cards">
-                    <div className="profile-card">
-                        <div className="image-container">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Jeff_Bezos_at_Amazon_Spheres_Grand_Opening_in_Seattle_-_2018_%2839074799225%29_%28cropped%29.jpg" alt="Neha Kapoor" />
-                        </div>
-                        <div className="content">
-                            <h2>Neha Kapoor</h2>
-                            <p className="role">PRESIDENT</p>
-                            <p className="description">
-                                Leads the strategic vision and execution of Build School, ensuring a transformative experience for aspiring entrepreneurs.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="profile-card">
-                        <div className="image-container">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Jeff_Bezos_at_Amazon_Spheres_Grand_Opening_in_Seattle_-_2018_%2839074799225%29_%28cropped%29.jpg" alt="Neha Kapoor" />
-                        </div>
-                        <div className="content">
-                            <h2>Neha Kapoor</h2>
-                            <p className="role">PRESIDENT</p>
-                            <p className="description">
-                                Leads the strategic vision and execution of Build School, ensuring a transformative experience for aspiring entrepreneurs.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="profile-card">
-                        <div className="image-container">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Jeff_Bezos_at_Amazon_Spheres_Grand_Opening_in_Seattle_-_2018_%2839074799225%29_%28cropped%29.jpg" alt="Neha Kapoor" />
-                        </div>
-                        <div className="content">
-                            <h2>Neha Kapoor</h2>
-                            <p className="role">PRESIDENT</p>
-                            <p className="description">
-                                Leads the strategic vision and execution of Build School, ensuring a transformative experience for aspiring entrepreneurs.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="profile-card">
-                        <div className="image-container">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Jeff_Bezos_at_Amazon_Spheres_Grand_Opening_in_Seattle_-_2018_%2839074799225%29_%28cropped%29.jpg" alt="Neha Kapoor" />
-                        </div>
-                        <div className="content">
-                            <h2>Neha Kapoor</h2>
-                            <p className="role">PRESIDENT</p>
-                            <p className="description">
-                                Leads the strategic vision and execution of Build School, ensuring a transformative experience for aspiring entrepreneurs.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="profile-card">
-                        <div className="image-container">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Jeff_Bezos_at_Amazon_Spheres_Grand_Opening_in_Seattle_-_2018_%2839074799225%29_%28cropped%29.jpg" alt="Neha Kapoor" />
-                        </div>
-                        <div className="content">
-                            <h2>Neha Kapoor</h2>
-                            <p className="role">PRESIDENT</p>
-                            <p className="description">
-                                Leads the strategic vision and execution of Build School, ensuring a transformative experience for aspiring entrepreneurs.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="profile-card">
-                        <div className="image-container">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Jeff_Bezos_at_Amazon_Spheres_Grand_Opening_in_Seattle_-_2018_%2839074799225%29_%28cropped%29.jpg" alt="Neha Kapoor" />
-                        </div>
-                        <div className="content">
-                            <h2>Neha Kapoor</h2>
-                            <p className="role">PRESIDENT</p>
-                            <p className="description">
-                                Leads the strategic vision and execution of Build School, ensuring a transformative experience for aspiring entrepreneurs.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="profile-card">
-                        <div className="image-container">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Jeff_Bezos_at_Amazon_Spheres_Grand_Opening_in_Seattle_-_2018_%2839074799225%29_%28cropped%29.jpg" alt="Neha Kapoor" />
-                        </div>
-                        <div className="content">
-                            <h2>Neha Kapoor</h2>
-                            <p className="role">PRESIDENT</p>
-                            <p className="description">
-                                Leads the strategic vision and execution of Build School, ensuring a transformative experience for aspiring entrepreneurs.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="profile-card">
-                        <div className="image-container">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Jeff_Bezos_at_Amazon_Spheres_Grand_Opening_in_Seattle_-_2018_%2839074799225%29_%28cropped%29.jpg" alt="Neha Kapoor" />
-                        </div>
-                        <div className="content">
-                            <h2>Neha Kapoor</h2>
-                            <p className="role">PRESIDENT</p>
-                            <p className="description">
-                                Leads the strategic vision and execution of Build School, ensuring a transformative experience for aspiring entrepreneurs.
-                            </p>
-                        </div>
-                    </div>
+                <div className="carding"style={{ display: "grid",
+    gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+    gap: "20px" }}>
+                    {teammates.map(createCard4)}
                 </div>
             </div>
         </div>

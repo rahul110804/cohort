@@ -1,375 +1,383 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    width: 100%;
-  }
-  
-  body,
-  html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-    font-size: 16px;
-  }
-  
-  .Parent {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(5, 5, 39);
-  }
-  
-  .hero {
-    /* width: 100%; */
-    height: 100vh;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.475)),
-      url("/src/components/image20.png") center/cover no-repeat;
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #07021f;
-    height: clamp(50px, 8vh, 70px);
-    display: flex;
-    justify-content: space-between  ;
-    align-items: center;
-    z-index: 10;
-    padding: 2rem clamp(1rem, 3vw, 3rem);
-  }
-  
-  .logo img {
-    max-width: clamp(80px, 15vw, 120px);
-    height: auto;
-  }
-  
-  .btn
-  {
-    text-align: end;
-  }
-  button {
-    width: 30%;
-    padding: clamp(0.4rem, 1vw, 0.8rem) clamp(0.8rem, 2vw, 1.2rem);
-    background-color: #3d45d8;
-    color: white;
-    font-family: Arial, sans-serif;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: clamp(0.875rem, 1.5vw, 1rem);
-    transition: transform 0.2s ease, background-color 0.2s ease;
-  }
-  
-  button:hover {
-    transform: translateY(-2px);
-    background-color: #4a51e1;
-  }
-  
-  .content {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: clamp(1rem, 3vw, 3rem);
-  }
-  
-  .content img {
-    margin-top: 5rem;
-    width: min(90%, 1200px);
-    height: auto;
-  }
-  
-  .contentBtn {
-    
-    margin-top: clamp(2rem, 5vh, 4rem);
-  }
-  .contentBtn .register
-  {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
 
-    text-align: end;
-  }
-  .contentBtn button {
-    width: 40%;
-    border-radius: 5px;
-    padding: clamp(0.5rem, 1vw, 0.8rem) clamp(1.5rem, 3vw, 2.5rem);
-  }
-  
-  .contentBtn .explore {
-    background-color: rgba(0, 0, 0, 0.685);
-  }
-  
-  .partners {
-    margin-top: clamp(0.5rem, 2vh, 1.5rem);
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .partners img {
-    width: clamp(100px, 20vw, 150px);
-    height: auto;
-  }
-  
-  .brands {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(128, 128, 128, 0.256);
-    width: 100%;
-    margin-bottom: clamp(1rem, 2vh, 1.5rem);
-    min-height: 50px;
-    padding: 1rem clamp(1rem, 3vw, 3rem);
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-  
-  .brands img {
-    width: clamp(30px, 8vw, 50px);
-    height: auto;
-  }
-  
-  .moto {
-    height: auto;
-    display: flex;
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+.Parent {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(5, 5, 39);
+}
+
+.hero {
+  /* width: 100%; */
+  height: 100vh;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.475)),
+    url("/src/components/image20.png") center/cover no-repeat;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #07021f;
+  height: clamp(50px, 8vh, 70px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  padding: 2rem clamp(1rem, 3vw, 3rem);
+}
+
+.logo img {
+  max-width: clamp(80px, 15vw, 120px);
+  height: auto;
+}
+
+.btn {
+  text-align: end;
+}
+
+button {
+  width: 30%;
+  padding: clamp(0.4rem, 1vw, 0.8rem) clamp(0.8rem, 2vw, 1.2rem);
+  background-color: #3d45d8;
+  color: white;
+  font-family: Arial, sans-serif;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: clamp(0.875rem, 1.5vw, 1rem);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  background-color: #4a51e1;
+}
+
+.content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: clamp(1rem, 3vw, 3rem);
+}
+
+.content img {
+  margin-top: 5rem;
+  width: min(90%, 1200px);
+  height: auto;
+}
+
+.contentBtn {
+
+  margin-top: clamp(2rem, 5vh, 4rem);
+}
+
+.contentBtn .register {
+
+  text-align: end;
+}
+
+.contentBtn button {
+  width: 40%;
+  border-radius: 5px;
+  padding: clamp(0.5rem, 1vw, 0.8rem) clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.contentBtn .explore {
+  background-color: rgba(0, 0, 0, 0.685);
+}
+
+.partners {
+  margin-top: clamp(0.5rem, 2vh, 1.5rem);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.partners img {
+  width: clamp(100px, 20vw, 150px);
+  height: auto;
+}
+
+.brands {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.256);
+  width: 100%;
+  margin-bottom: clamp(1rem, 2vh, 1.5rem);
+  min-height: 50px;
+  padding: 1rem clamp(1rem, 3vw, 3rem);
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.brands img {
+  width: clamp(30px, 8vw, 50px);
+  height: auto;
+}
+
+.moto {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight: bold;
+  gap: clamp(1rem, 2vh, 1.5rem);
+  padding: clamp(1rem, 3vw, 2rem);
+}
+
+.heading-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: clamp(2rem, 5vh, 4rem);
+  gap: clamp(2rem, 4vh, 3rem);
+}
+
+.who {
+  width: min(100%, 300px);
+  font-family: Manrope-Light;
+  font-family: Manrope-Light;
+}
+
+.bring {
+  width: min(100%, 1000px);
+  font-size: 30px;
+}
+
+.templates {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: clamp(1rem, 2vw, 1.5rem);
+  padding: clamp(1rem, 3vw, 2rem);
+}
+
+.learn {
+  width: min(90%, 1000px);
+  margin-top: clamp(1rem, 2vh, 1.5rem);
+}
+
+.learn-2 {
+  font-size: 30px;
+}
+
+.mentors {
+  background-image: url("/src/components/god\ rays.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 700px;
+  padding: clamp(1rem, 3vw, 2rem);
+  background-size: cover;
+  background-position: center;
+}
+
+.head p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: clamp(1rem, 2vh, 1.5rem);
+}
+
+.card {
+  background-color: #1f2937;
+  color: white;
+  width: min(90%, 300px);
+  text-align: center;
+  border-radius: 20px;
+  padding: clamp(1rem, 3vw, 1.5rem);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.profile-pic {
+  width: clamp(60px, 10vw, 80px);
+  height: clamp(60px, 10vw, 80px);
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #2d3748;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h2 {
+  margin: 15px 0 5px;
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+}
+
+p {
+  font-size: clamp(0.875rem, 1.5vw, 1rem);
+  color: #cbd5e0;
+  margin-bottom: 15px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: clamp(0.5rem, 1vw, 1rem);
+}
+
+.icon {
+  width: clamp(30px, 5vw, 35px);
+  height: clamp(30px, 5vw, 35px);
+  background-color: #2d3748;
+  color: white;
+  font-size: clamp(0.875rem, 1.5vw, 1rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.icon:hover {
+  background-color: #4a5568;
+}
+
+/* .carding {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(1rem, 2vw, 1.5rem);
+} */
+
+.Cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(1rem, 2vw, 1.5rem);
+  margin-top: clamp(2rem, 4vh, 3rem);
+  padding: clamp(1rem, 3vw, 2rem);
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: clamp(1rem, 3vw, 2rem);
+}
+
+.profile-card {
+  background-color: rgb(5, 5, 39);
+  color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  width: min(90%, 280px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.image-container {
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  padding: clamp(1rem, 3vw, 1.5rem);
+  text-align: left;
+}
+
+.role {
+  color: #4a90e2;
+  font-size: clamp(0.875rem, 1.5vw, 1rem);
+  margin: 0 0 15px;
+  font-weight: bold;
+}
+
+.description {
+  font-size: clamp(0.875rem, 1.5vw, 1rem);
+  color: #d1d1d1;
+  line-height: 1.5;
+}
+
+@container (max-width: 768px) {
+  .content-btn {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: clamp(1rem, 2vw, 1.25rem);
-    font-weight: bold;
-    gap: clamp(1rem, 2vh, 1.5rem);
-    padding: clamp(1rem, 3vw, 2rem);
+    align-items: stretch;
   }
-  
-  .heading-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: clamp(2rem, 5vh, 4rem);
-    gap: clamp(2rem, 4vh, 3rem);
-  }
-  
-  .who {
-    width: min(100%, 300px);
-    font-family:Manrope-Light;
-    font-family: Manrope-Light;
-  }
-  
-  .bring {
-    width: min(100%, 1000px);
-    font-size: 30px;
-  }
-  
-  .templates {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: clamp(1rem, 2vw, 1.5rem);
-    padding: clamp(1rem, 3vw, 2rem);
-  }
-  
-  .learn {
-    width: min(90%, 1000px);
-    margin-top: clamp(1rem, 2vh, 1.5rem);
-  }
-  .learn-2
-  {
-    font-size:30px;
-  }
-  .mentors {
-    background-image: url("/src/components/god\ rays.png");
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 700px;
-    padding: clamp(1rem, 3vw, 2rem);
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .head p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: clamp(1rem, 2vh, 1.5rem);
-  }
-  
+}
+
+@media (prefers-color-scheme: dark) {
   .card {
-    background-color: #1f2937;
-    color: white;
-    width: min(90%, 300px);
-    text-align: center;
-    border-radius: 20px;
-    padding: clamp(1rem, 3vw, 1.5rem);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #111827;
   }
-  
-  .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-  }
-  
-  .profile-pic {
-    width: clamp(60px, 10vw, 80px);
-    height: clamp(60px, 10vw, 80px);
-    margin: 0 auto;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 3px solid #2d3748;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .profile-pic img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  h2 {
-    margin: 15px 0 5px;
-    font-size: clamp(1.25rem, 2vw, 1.5rem);
-  }
-  
-  p {
-    font-size: clamp(0.875rem, 1.5vw, 1rem);
-    color: #cbd5e0;
-    margin-bottom: 15px;
-  }
-  
-  .social-icons {
-    display: flex;
-    justify-content: center;
-    gap: clamp(0.5rem, 1vw, 1rem);
-  }
-  
+
   .icon {
-    width: clamp(30px, 5vw, 35px);
-    height: clamp(30px, 5vw, 35px);
-    background-color: #2d3748;
-    color: white;
-    font-size: clamp(0.875rem, 1.5vw, 1rem);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    border-radius: 50%;
-    transition: background-color 0.3s ease;
+    background-color: #1f2937;
   }
-  
-  .icon:hover {
-    background-color: #4a5568;
+}
+
+@media print {
+  .hero {
+    margin-top: 0;
+    background: none;
   }
-  
-  .Cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: clamp(1rem, 2vw, 1.5rem);
-    flex-wrap: wrap;
-    margin-top: clamp(2rem, 4vh, 3rem);
-    padding: clamp(1rem, 3vw, 2rem);
+
+  nav,
+  .content-btn,
+  .social-icons {
+    display: none;
   }
-  
-  .team {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: clamp(1rem, 3vw, 2rem);
-  }
-  
-  .profile-card {
-    background-color: rgb(5, 5, 39);
-    color: white;
-    border-radius: 15px;
-    overflow: hidden;
-    width: min(90%, 280px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  }
-  
-  .image-container {
-    width: 100%;
-    aspect-ratio: 1;
-    overflow: hidden;
-  }
-  
-  .image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .content {
-    padding: clamp(1rem, 3vw, 1.5rem);
-    text-align: left;
-  }
-  
-  .role {
-    color: #4a90e2;
-    font-size: clamp(0.875rem, 1.5vw, 1rem);
-    margin: 0 0 15px;
-    font-weight: bold;
-  }
-  
-  .description {
-    font-size: clamp(0.875rem, 1.5vw, 1rem);
-    color: #d1d1d1;
-    line-height: 1.5;
-  }
-  
-  @container (max-width: 768px) {
-    .content-btn {
-      flex-direction: column;
-      align-items: stretch;
-    }
-  }
-  
-  @media (prefers-color-scheme: dark) {
-    .card {
-      background-color: #111827;
-    }
-  
-    .icon {
-      background-color: #1f2937;
-    }
-  }
-  
-  @media print {
-    .hero {
-      margin-top: 0;
-      background: none;
-    }
-  
-    nav,
-    .content-btn,
-    .social-icons {
-      display: none;
-    }
-  }
+}
