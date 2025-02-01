@@ -90,6 +90,37 @@ button:hover {
   padding: clamp(1rem, 3vw, 3rem);
 }
 
+.headline {
+  margin-top: 10rem;
+  font-size: 2.5rem;
+  /* Adjust size */
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  font-family: Arial, sans-serif;
+  white-space: nowrap;
+}
+
+.white {
+  color: white;
+}
+
+.blue {
+  color: #2c68d1;
+  /* Blue shade */
+}
+
+.italic-blue {
+  color: #2c68d1;
+  font-style: italic;
+}
+.subtext {
+  font-size: 1rem;
+  margin-top: 2rem;
+  max-width: 700px;
+  text-align: center;
+  color: white;
+}
 .content img {
   margin-top: 5rem;
   width: min(90%, 1200px);

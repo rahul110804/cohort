@@ -135,7 +135,15 @@ function Cohort() {
             <div className="hero">
 
                 <div className="content">
-                    <img src="/images/Frame 32 (1).png" alt="" />
+                    <div className="headline">
+                        <span className="white">Build</span><span className="blue">School</span>
+                        <span className="white">: Your Launchpad to </span>
+                        <span className="italic-blue">transform</span>
+                        <span className="white"> Ideas</span>
+                    </div>
+                    <div className="subtext">
+                        <span>Join an exclusive circle of India’s most promising college founders. Get the tools, mentorship, and network to launch and scale your venture in 11 weeks.</span>
+                    </div>
                     <div className="contentBtn" style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gridGap: 20 }}>
                         <div className='register'>
                             <button>Register your team</button>
@@ -180,9 +188,11 @@ function Cohort() {
                     <p>MEET YOUR MENTORS</p>
                     <p>Real founders, operators and industry pros guiding you every step of the way</p>
                 </div>
-                <div className="carding"style={{ display: "grid",
-    gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
-    gap: "20px" }}>
+                <div className="carding" style={{
+                    display: "grid",
+                    gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+                    gap: "20px"
+                }}>
                     {mentors.map(createCard3)}
                 </div>
             </div>
@@ -191,9 +201,11 @@ function Cohort() {
                     <p>OUR CORE TEAM</p>
                     <p>Why we built Build School and how we’re shaping India’s next generation of founders</p>
                 </div>
-                <div className="carding"style={{ display: "grid",
-    gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
-    gap: "20px" }}>
+                <div className="carding" style={{
+                    display: "grid",
+                    gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+                    gap: "20px"
+                }}>
                     {teammates.map(createCard4)}
                 </div>
             </div>
