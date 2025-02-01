@@ -63,7 +63,7 @@ nav {
 }
 
 button {
-  width: 30%;
+  width: 40%;
   padding: clamp(0.4rem, 1vw, 0.8rem) clamp(0.8rem, 2vw, 1.2rem);
   background-color: #3d45d8;
   color: white;
@@ -98,7 +98,7 @@ button:hover {
   text-align: center;
   color: white;
   font-family: Arial, sans-serif;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 
 .white {
@@ -128,18 +128,16 @@ button:hover {
 }
 
 .contentBtn {
-
   margin-top: clamp(2rem, 5vh, 4rem);
 }
 
 .contentBtn .register {
-
   text-align: end;
 }
 
 .contentBtn button {
-  width: 40%;
-  border-radius: 5px;
+  width: 50%;
+  border-radius: 6px;
   padding: clamp(0.5rem, 1vw, 0.8rem) clamp(1.5rem, 3vw, 2.5rem);
 }
 
